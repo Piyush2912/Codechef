@@ -13,6 +13,13 @@ public class Hard_Cash {
             for (int i = 0; i < n; i++) {
                 a[i] = sc.nextInt();
             }
+            long sum = 0;
+            long r = 0;
+            for (int i = 0; i < n; i++) {
+                sum += a[i];
+            }
+            r = sum % k;
+            System.out.println(r);
         }
     }
 }
